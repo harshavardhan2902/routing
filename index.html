@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li><a ui-Sref="sigin">SignIn</a></li>
+                <li><a ui-Sref="signup">SignUp</a></li>
+                
+            </ul>
+        </div>
+        <div class="section">
+            <ui-view>
+
+            </ui-view>
+        </div>
+    </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/alt.js"></script>
+<script src="js/controllers/signinCtrl.js"></script>
+<script src="js/controllers/signupCtrl.js"></script>
+</body>
+
+</html>
